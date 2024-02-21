@@ -1,0 +1,32 @@
+# PIZZA ORDER PROGRAM
+bill = 0
+pizza_size = input("welcome to dira pizzas.com \nkindly input the size of pizza you would like to order \ns for small \nm for medium \nl for large \n")
+if pizza_size == "s":
+    bill = 15
+elif pizza_size == "m":
+    bill = 20
+elif pizza_size == "l":
+    bill = 25
+add_perperoni=input("would you like to add perperoni to you pizza ? type \ny for yes\nn for no\n ")
+if add_perperoni == "y" :
+        if pizza_size == "s":
+            bill +=2
+        elif pizza_size == "m":
+            bill +=3
+        elif  pizza_size == "l":
+            bill +=3
+else :
+        bill=bill
+
+extra_cheese = input("would you like to add more cheese to your pizza ? type\ny for yes \nn for no\n")
+if extra_cheese == "y":
+        if "s" :
+            bill +=1
+        elif "m" :
+            bill +=1
+        else :
+            bill +=1
+else :
+    bill =  bill
+
+print(bill)
