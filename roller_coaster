@@ -11,14 +11,18 @@ if height_teger >= 120 :
     elif age_teger <=  12:
         bill = 10
         print("kindly pay 10$ ")
+    elif 45 <= age_teger <= 55 :
+        bill = 0
+        print("congraturations , you will be riding for free today ")
     else :
         bill = 12
         print("kindly pay 12$ to ride the rollercoaster ")
     pic_fee = input("do you want a picture  while on the rollercoaster ? yes or no ")
     if "yes" :
-        bill_new = int(bill) + 3
+        bill = int(bill) + 3
         if "no " :
-              bill_new  = bill
+              bill = bill
 else:
     print("you do not qualify to ride the rollercoaster")
-print(f"your total bill is {bill_new} $")
+print(f"your total bill is {bill} $")
+                                      
