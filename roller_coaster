@@ -1,4 +1,4 @@
-print("welcome to the tollercoaster")
+print("welcome to the rollercoaster")
 bill = 0
 height = input("kindly give your height in centimeters\n")
 height_teger = int(height)
