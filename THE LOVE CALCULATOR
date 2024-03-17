@@ -1,0 +1,34 @@
+print("welcome to the love calculator ")
+name_one = input ("enter the name of person one ")
+name_onenew = name_one.lower()
+name_two = input ( "enter the name of person two ")
+name_twonew = name_two.lower()
+name_sum = name_onenew + name_twonew
+# print(type(name_sum))
+# print( name_onenew + name_twonew)
+# print(name_sum)
+text = name_sum
+letters_to_count_one =  ['t','r','u' , 'e' ]
+total_count_one = 0
+for letter in letters_to_count_one :
+    count_one = text.count(letter)
+    total_count_one += count_one
+# print(total_count_one)
+text = name_sum
+letters_to_count_two =  ['l','o','v' , 'e' ]
+total_count_two =0
+for letter in letters_to_count_two :
+    count_two = text.count(letter)
+    total_count_two += count_two
+# print(total_count_one)
+concatenated_score = str( total_count_one) + str(total_count_two )
+# print(concatenated_score)
+# print (f"your score is {concatenated_score}")
+if int (concatenated_score)  <= 10 or  int(concatenated_score) >= 90  :
+    print( f"your score is {concatenated_score} , you go together like coke and mentos ! ! ")
+elif int (concatenated_score) <= 50 and  int(concatenated_score) >= 40  :
+    print(f"your score is {concatenated_score} , you are alright together " )
+else :
+    print(f"your score is {concatenated_score} ")
+
+print("Thankyou for using the love calculator")
